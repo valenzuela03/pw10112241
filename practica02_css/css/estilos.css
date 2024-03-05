@@ -22,10 +22,55 @@ header nav ul li{
     padding-bottom: 2px;
     /* text-decoration: underline; tambien subraya las palabras */
 }
+#bgoffer{
+    left: -35px;
+    position: relative; /* Se mueve libremente en el body */
+    top: -410px;
+}
 #granthams{
     margin-top: 25px;
     margin-left: 25px;
 }
 #paint{
     float: right;
+}
+#primerseccion{
+    /* border: 1px solid blue; */
+    height: 318px;
+    margin-top: 60px;
+}
+#primerseccion article{
+    display: inline-block;
+    vertical-align: top;
+}
+#secc01art01{
+    /* border: 1px solid red; */
+    width: 61%;
+}
+#secc01art02{
+    /* border: 1px solid red; */
+    width: 30%;
+    margin-left: 50px;
+}
+#secc01art02 ul{
+    list-style: none;  /* Quita la vineta para que quede la de abajo */
+}
+#secc01art02 ul li:before{
+    color: #FF0099;
+    content: "• ";  /* Agrega la vineta para pintarla de color */
+}
+.colorazul{
+    color: #4267b3;
+}
+.colorrosa{
+    color: #FF0099;
+}
+.colorverde{
+    color: #8BC500;
+}
+.letragrande{
+    font-size: 3.5em; /* 3.5 x 16px */
+}
+.nito{
+    font-weight: bold;
 }
