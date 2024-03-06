@@ -59,6 +59,39 @@ header nav ul li{
     color: #FF0099;
     content: "• ";  /* Agrega la vineta para pintarla de color */
 }
+#secc03art04{
+    padding-top: 45px;
+}
+#segundaseccion article{
+    /* border: 1px solid red; */
+    padding-right: 140px;  /* Mueve el texto NO la caja */
+    /* margin-right: 140px;  mueve toda la caja (ambos estan bien)*/
+    text-align: right;
+}
+#terceraseccion article{
+    /* border: 1px solid red; */
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+}
+#terceraseccion article img{
+    /*
+        Aineacion vertical del texto
+        que la rodea
+    */
+    vertical-align: middle;
+}
+#footer article{
+    width: 33%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#footer{
+    background-color: rgb(81, 81, 243);
+}
+.colorblanco{
+    color: white;
+}
 .colorazul{
     color: #4267b3;
 }
@@ -70,6 +103,9 @@ header nav ul li{
 }
 .letragrande{
     font-size: 3.5em; /* 3.5 x 16px */
+}
+.letramediana{
+    font-size: 2em;
 }
 .nito{
     font-weight: bold;
