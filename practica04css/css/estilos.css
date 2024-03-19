@@ -1,0 +1,84 @@
+body{
+    font-size: 16px; /* 1em */
+    color: gray;
+    margin: 0px auto; /* centrado */
+    max-width: 1024px;
+}
+footer article{
+    width: 19.5%;
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: top;
+}
+header{
+    padding-left: 20px;
+}
+header nav ul{
+    padding-inline-start: 0px;
+}
+header nav ul li{
+    color: black;
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: left;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+header nav{
+    display: inline-block;
+}
+#anos{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+}
+#art1{
+    width: 58%;
+}
+#art2{
+    position: relative;
+    width: 39%;
+}
+#buy{
+    top: 40px;
+    position: relative;
+}
+#baika{
+    width: 100%;
+}
+#go{
+    top: -20px;
+    left: -10px;
+    position: relative;
+}
+#logo{
+    margin-top: 25px;
+}
+#primerSeccion article{
+    display: inline-block;
+    vertical-align: top;
+}
+.imgDerecha{
+    float: right;
+}
+.letraNegra{
+    color: black;
+}
+.letraVerde{
+    color: greenyellow;
+}
+.punteada{
+    border-style: dashed;
+}
+.tamTitulo{
+    font-size: 4.5em;
+}
+.nito{
+    font-weight: bold;
+}
+.video{
+    margin: 20px 0;
+    width: 48%;
+}
