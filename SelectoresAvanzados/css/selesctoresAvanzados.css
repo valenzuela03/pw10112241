@@ -1,0 +1,72 @@
+img[alt]{
+    border: 5px solid blue;
+}
+img[src="img/tecnm.png"]{
+    width: 400px;
+}
+img[src^="img/"]{ /* ^ Toma todas lo que empiece con /img */
+    width: 150px;
+}
+img[src$="png"]{ /* $ Toma los que terminen con png */
+    width: 250px;
+}
+img[src*="mg/"]{ /* * Toma a principio, medio o fin donde tenga mg/ */
+    width: 1000px;
+}
+/* Equivalente a:
+    .resaltado
+    .ingles
+    .archivo    */
+article[class~="resaltado"]{ /* ~ Toma las clases separadas por espacios*/
+    border: 1px dashed blue;
+}
+article[class~="ingles"]{
+    border: 1px dashed red;
+}
+article[class~="archivo"]{
+    border: 1px dashed green;
+}
+
+article[class|="ingles"]{ /* Toma las clases separadas por guion - */
+    text-align: center;
+}
+
+div > p{ /* > Toma los hijos directos de p */
+    color: blue;
+}
+div p{ /* Toma todos los elementos p dentro de div */
+    color: red;
+}
+
+h2 + p{ /* Tomara todas las p despues de h2 */
+    color: gray;
+}
+
+h2 ~ p{ /* Toma todas las p seguidas de h2 */
+    color: green;
+}
+
+#resumen,#experimento,#pruebas,#resultados,#conclusiones{ /* Se seleccionan todos menos referencias */
+    color: red;
+}
+section:not(#referencias){ /* Se seleccionan todos menos referencias */
+    color: blue;
+}
+
+li:nth-child(odd){ /* Todos los elementos impares se pintaran*/
+    color: green;
+}
+li:nth-child(odd){ /* Todos los elementos Pares se pintaran*/
+    color: blue;
+}
+li:nth-child(5){ /* El quinto elemento se pintara */
+    color: red; 
+}
+li:nth-child(1){ /* El primer elemento se pintara */
+    color: purple;
+}
+
+p::first-line{ /* Selecciona la primer etiqueta de p */
+    color: red;
+    font-weight: bold;
+}
