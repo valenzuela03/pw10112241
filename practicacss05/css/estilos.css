@@ -8,3 +8,44 @@ header{
     text-align: center;
     background: #235e92;
 }
+#cargando{
+    width: 20px;
+}
+#panelWP{
+    border: 1px solid red;
+    vertical-align: top;
+}
+#secc01{
+    border: 1px solid black;
+    text-align: right;
+    background: #efefef;
+}
+#secc01 img{
+    margin: 10px 0 10px 0;
+    vertical-align: top;
+    width: 80px;
+}
+#secc02{
+    border: 1px solid black;
+}
+#secc02art01{
+    background: #1e4973;
+    width: 220px;
+}
+#secc02art01 img{
+    width: 220px;
+}
+#secc02art02{
+    text-align: left;
+    border: 1px solid red;
+    width: 24%;
+    width: 28%;
+}
+
+.barra{
+    border: 1px solid red;
+    width: 220px;
+}
+.progressBar{
+    margin-left: 8px;
+}
