@@ -1,0 +1,27 @@
+body{
+    font-size: 16px; /* 1em */
+    margin: 0px auto; /* centrado */
+    max-width: 1024px;
+    background: rgb(250, 225, 229);
+}
+header{
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 30px;
+    padding-bottom: 50px;
+}
+
+#subtitulo{
+    font-size: 1.5em;
+}
+#titulo{
+    font-size: 6em;
+}
+
+.letra-blanco{
+    color: white;
+    font-size: 6em;
+}
