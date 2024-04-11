@@ -1,51 +1,91 @@
-body{
-    border: 1px solid red;
-    font-size: 16px; /* 1em */
-    margin: 0px auto; /* centrado */
+body {
+    font-size: 16px;
+    /* 1em */
+    margin: 0px auto;
+    /* centrado */
     max-width: 1024px;
 }
-header{
+
+header {
     text-align: center;
     background: #235e92;
 }
-#cargando{
-    width: 20px;
-}
-#panelWP{
-    border: 1px solid red;
+
+#panelWP {
     vertical-align: top;
-}
-#secc01{
-    border: 1px solid black;
-    text-align: right;
-    background: #efefef;
-}
-#secc01 img{
-    margin: 10px 0 10px 0;
-    vertical-align: top;
-    width: 80px;
-}
-#secc02{
-    border: 1px solid black;
-}
-#secc02art01{
-    background: #1e4973;
-    width: 220px;
-}
-#secc02art01 img{
-    width: 220px;
-}
-#secc02art02{
-    text-align: left;
-    border: 1px solid red;
-    width: 24%;
-    width: 28%;
 }
 
-.barra{
-    border: 1px solid red;
-    width: 220px;
+nav {
+    background: #efefef;
+    text-align: right;
 }
-.progressBar{
+
+#secc01 img {
+    vertical-align: top;
+    width: 100%;
+}
+
+#secc01 {
+    display: inline-block;
+    width: 30%
+}
+
+#secc02 {
+    display: inline-block;
+    vertical-align: top;
+    width: 68%;
+}
+
+#secc02art article {
+    display: inline-block;
+    text-align: center;
+    width: 24.57%;
+    height: 180px;
+    vertical-align: top;
+}
+
+#secc02art article:nth-child(3) {
+    background: #19a820;
+}
+
+#secc02art article:nth-child(4) {
+    background: #1b6da9;
+}
+
+#secc02art article:nth-child(5) {
+    background: #7f1aa8;
+}
+
+#secc02art article:nth-child(6) {
+    background: #a71a19;
+}
+
+#artUsers article{
+    background: #4a6aae;
+    display: inline-block;
+    text-align: center;
+    height: 200px;
+    vertical-align: top;
+    width: 24%;
+}
+#artUsers article img{
+    width: 90%;
+    height: 140px;
+}
+
+#paneles{
+    width: 100%;
+}
+
+.boton{
+    border: 0px solid white;
+    background: #5bc0de;
+}
+
+.barra {
+    width: 100%;
+}
+
+.progressBar {
     margin-left: 8px;
 }
