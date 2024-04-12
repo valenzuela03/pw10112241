@@ -30,10 +30,23 @@ nav {
     width: 30%
 }
 
+#secc01 article ul{
+    background: #1e4973;
+    margin-top: 0px;
+}
+
+#secc01 article ul li{
+    color: white;
+}
+
 #secc02 {
     display: inline-block;
     vertical-align: top;
     width: 68%;
+}
+
+#secc02 article{
+    margin-top: 8px;
 }
 
 #secc02art article {
@@ -77,6 +90,13 @@ nav {
     width: 100%;
 }
 
+#panelWP{
+    background: #235e92;
+    color: white;
+    padding-right: 168px;
+    font-size: 1.1em;
+}
+
 .boton{
     border: 0px solid white;
     background: #5bc0de;
@@ -84,6 +104,10 @@ nav {
 
 .barra {
     width: 100%;
+}
+
+.letra-blanca{
+    color: white;
 }
 
 .progressBar {
