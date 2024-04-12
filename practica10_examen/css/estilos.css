@@ -1,0 +1,100 @@
+body {
+    font-size: 16px;
+    /* 1em */
+    margin: 0px auto;
+    /* centrado */
+    max-width: 1024px;
+    background: #f4f4f4;
+}
+#botones{
+    display: inline-block;
+}
+
+#btn1{
+    border-color: red;
+    background: red;
+    color: white;
+}
+
+#btn2{
+    background: white;
+    border: 1px solid red;
+    color: red;
+}
+
+header img{
+    position: relative;
+    top: 10px;
+}
+
+nav{
+    float: right;
+}
+
+header nav button{
+    border-radius: 5px;
+    float: right;
+    margin-top: -20px;
+    margin-right: 25px;
+    width: 100px;
+}
+
+header nav ul li{
+    display: inline-block;
+    top: 10px;
+    margin-left: 20px;
+    position: relative;
+    left: -170%;
+}
+
+#seccion01{
+    margin-top: 20px;
+}
+
+#seccion01 article{
+    width: 65%;
+    display: inline-block;
+}
+
+#work{
+    width: 34%;
+    position: relative;
+}
+
+#secc01art01{
+    margin-top: 50px;
+}
+
+#seccion02 article article{
+    background: white;
+    display: inline-block;
+    width: 21%;
+    padding: 10px;
+    margin-left: 10px  
+}
+
+#secc02art01 img{
+    width: 60px;
+}
+
+#work{
+    width: 33%;
+    position: relative;
+    margin-left: 70%;
+    margin-top: -30%;
+}
+
+.titulo{
+    font-size: 3.5em;
+}
+
+.subtitulo{
+    font-size: 3em;
+}
+
+.largo{
+    height: 180px;
+    border-radius: 5px;
+}
+
+
