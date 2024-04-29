@@ -40,6 +40,17 @@ app.get('/api/clientes', (req,res)=>{
     });
 })
 
+//Seleccionamos un cliente
+app.get('/api/clientes/:id', (req,res)=>{
+    conexion.query('SELECT * FROM clientes WHERE id=?', [req.params.id],(error,fila)=>{
+        if(error){
+            throw error;
+        }else{
+            res.send(fila);
+        }
+    });
+});
+
 //Encender servidor (Todos los servidores se prenden en el puerto 80 y uno seguro es el 4443)
 let puerto = 3000;
 app.listen(puerto, function () {
