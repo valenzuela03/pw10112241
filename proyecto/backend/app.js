@@ -30,25 +30,55 @@ app.get("/", function (req, res) {
 })
 
 //Seleccionamos todos losclientes
-app.get('/api/clientes', (req,res)=>{
-    conexion.query('SELECT * FROM clientes',(error, filas)=>{
-        if(error){
+app.get('/api/clientes', (req, res) => {
+    conexion.query('SELECT * FROM clientes', (error, filas) => {
+        if (error) {
             throw error;
-        }else{
+        } else {
             res.send(filas);
         }
     });
 })
 
 //Seleccionamos un cliente
-app.get('/api/clientes/:id', (req,res)=>{
-    conexion.query('SELECT * FROM clientes WHERE id=?', [req.params.id],(error,fila)=>{
-        if(error){
+app.get('/api/clientes/:id', (req, res) => {
+    conexion.query('SELECT * FROM clientes WHERE id=?', [req.params.id], (error, fila) => {
+        if (error) {
             throw error;
-        }else{
+        } else {
             res.send(fila);
         }
     });
+});
+
+//ELIMINA
+app.delete('/api/clientes/:id', (req, res) => {
+    let id = req.params.id;
+    conexion.query('DELETE FROM clientes WHERE id=?', [id], (error, filas) => {
+        if(error){
+            throw error
+        } else {
+            res.send(filas)
+        }
+    })
+});
+
+//INSERTAR UN NUEVO CLIETNE
+app.post('/api/clientes/', (req, res) => {
+    let data = {
+        id:req.body.id,
+        nombre:req.body.nombre,
+        direccion:req.body.direccion,
+        rfc:req.body.rfc
+    }
+    let sql = "INSERT INTO clientes SET ?";
+    conexion.query(sql, data, (error, resultado) => {
+        if(error){
+            throw error;
+        } else {
+            res.send(resultado);
+        }
+    })
 });
 
 //Encender servidor (Todos los servidores se prenden en el puerto 80 y uno seguro es el 4443)
