@@ -16,14 +16,26 @@
                         <th>Telefono</th>
                         <th>RFC</th>
                     </thead>
-                    <tbody>
+                    <tbody v-if="clientes.length > 0">
                         <tr v-for="(clientes, index) in clientes" :key="index">
                             <td>{{ clientes.id }}</td>
                             <td>{{ clientes.nombre }}</td>
                             <td>{{ clientes.direccion }}</td>
                             <td>{{ clientes.telefono }}</td>
                             <td>{{ clientes.rfc }}</td>
-                            <td>Editar &nbsp; Borrar</td>
+                            <td>
+                                Editar
+                                &nbsp;
+                                <button class="btn btn-danger" @click="deleteCliente(clientes.id)">
+                                    Borrar
+                                </button>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody v-else>
+                        <tr>
+                            <td colspan="5" style="text-align: center;">Sin registros</td>
                         </tr>
                     </tbody>
                 </table>
@@ -45,8 +57,15 @@
         },
         methods: {
             getClientes(){
-                axios.get('http://localhost:3000/api/clientes').then(res => {
+                axios.get('http://localhost:3000/api/clientes/').then(res => {
                     this.clientes = res.data;
+                });
+            },
+            deleteCliente(iddelclienteaborrar){
+                axios.delete('http://localhost:3000/api/clientes/' + iddelclienteaborrar).then(res => {
+                    if(res.data.affectedRows > 0){
+                        this.getClientes(); //se recarguen los datos
+                    }
                 });
             }
         }
